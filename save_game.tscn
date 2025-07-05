@@ -1,0 +1,34 @@
+[gd_scene load_steps=2 format=3 uid="uid://degqhcmy7x1r"]
+
+[ext_resource type="Script" path="res://SaveGame.gd" id="1_q3n4w"]
+
+[node name="SaveGame" type="Node2D"]
+script = ExtResource("1_q3n4w")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Save" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 0
+text = "Save"
+
+[node name="Load" type="Button" parent="CanvasLayer/Control/VBoxContainer"]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+text = "Load"
+
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Save" to="." method="_on_save_pressed"]
+[connection signal="pressed" from="CanvasLayer/Control/VBoxContainer/Load" to="." method="_on_load_pressed"]

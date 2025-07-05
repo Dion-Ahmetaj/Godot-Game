@@ -1,0 +1,26 @@
+~ quest
+
+if Global.given_item == false
+	NPC: [[Hi/Hello/How are you]]....how can i be of service
+	- Im doing fine how about you?
+		NPC: I've lost my phial can you find it somewhere around here? Cant get my work done without it
+		- Okay i will check around 
+		- No i cannot help you right now => END
+		if Global.found_item == true
+			MC: I have found your item
+			NPC: Ah you have found it!Thank you alot !
+			set Global.given_item = true
+			=> END
+		else:
+			NPC: Are you still looking for my phial?I think i left it upstairs
+			=> END
+	- Hello! 
+		NPC: Hello! 
+		=> END
+	- Bye .
+	 => END
+else:
+	NPC: [[Hi/Hello/How are you]], thanks for helping me out
+	NPC: You should go head towards the other side of the laboratory,see what you can find out
+	=> END
+=> END

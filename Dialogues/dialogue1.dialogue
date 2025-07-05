@@ -1,0 +1,13 @@
+~ this_is_a_node_title
+MC: Am i lost ?What am i doing here?
+MC: Here are some choices
+- First one
+	MC: You suck
+- Second one
+	MC: You dont suck
+- Begin => this_is_a_node_title
+- End the conversation => END
+MC: What is love
+
+
+=> END

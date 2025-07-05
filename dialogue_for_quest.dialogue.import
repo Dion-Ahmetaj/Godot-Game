@@ -1,0 +1,15 @@
+[remap]
+
+importer="dialogue_manager_compiler_13"
+type="Resource"
+uid="uid://h20kxxvuj1dn"
+path="res://.godot/imported/dialogue_for_quest.dialogue-0591c5a62c3e1907328a08279f61f16e.tres"
+
+[deps]
+
+source_file="res://dialogue_for_quest.dialogue"
+dest_files=["res://.godot/imported/dialogue_for_quest.dialogue-0591c5a62c3e1907328a08279f61f16e.tres"]
+
+[params]
+
+defaults=true
