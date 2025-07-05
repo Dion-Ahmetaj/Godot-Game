@@ -1,2 +1,2 @@
 # Godot-Game
-A 2d sci-fi game
+A 2d sci-fi game with some horror elements
